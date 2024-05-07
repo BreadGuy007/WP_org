@@ -4,14 +4,6 @@
 
 namespace WordPress_org\Main_2022\ImportTestContent;
 
-/**
- * CLI script for generating local test content, fetched from the live wordpress.org site.
- *
- * This needs to be run in a wp-env, for example:
- *
- * yarn run wp-env run cli "php bin/import-test-content.php"
- */
-
 // This script should only be called in a CLI environment.
 if ( 'cli' != php_sapi_name() ) {
 	die();
@@ -120,4 +112,5 @@ function import_rest_to_posts( $rest_url ) {
 	}
 }
 
+// import start
 import_rest_to_posts( $opts['url'] );

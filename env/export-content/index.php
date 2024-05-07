@@ -17,7 +17,6 @@ require __DIR__ . '/includes/utils.php';
 if ( 'cli' != php_sapi_name() ) {
 	die();
 }
-
 $theme_dir = dirname( __DIR__, 2 ) . '/wp-content/themes/wporg-main-2022'; // Docker env.
 
 if ( ! is_dir( $theme_dir ) ) {
